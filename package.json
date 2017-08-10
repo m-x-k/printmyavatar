@@ -1,0 +1,24 @@
+{
+  "name": "printmyavatar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/m-x-k/printmyavatar.git",
+  "author": "martykells <martykells@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "rest": "^1.3.1",
+    "webpack": "^1.12.2"
+  },
+  "scripts": {
+    "watch": "webpack --watch -d"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0"
+  }
+}
