@@ -4,6 +4,7 @@
 
 * Yarn
 * Node
+* Java 1.7+
 
 ## Development setup
 
