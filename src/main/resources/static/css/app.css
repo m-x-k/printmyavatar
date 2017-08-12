@@ -1,3 +1,33 @@
+body {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+h1 {
+    text-align: center;
+}
 .container {
     background-color: black;
+}
+.mainLogo {
+    padding-top: 2%;
+    width: 50%;
+    height: 100%;
+}
+.freeLogo {
+    float: right;
+}
+.agileLogo {
+    float: left;
+}
+.upload-btn {
+    margin: 2%;
+    padding: 2%;
+    background-color: orange;
+}
+.center {
+    display: block;
+    margin: 0 auto;
+}
+footer {
+    padding-bottom: 2%;
 }

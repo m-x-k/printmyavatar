@@ -1,32 +1,16 @@
-# printmyavatar.com
+# PrintMyAvatar.com
 
-# Requirements
+## Requirements
 
-* JDK version 7+
+* Yarn
+* Node
 
-## Compile and run tests
-
-```
-./gradlew clean build test
-```
-
-## IDE Setup
-
-### Intellij
+## Development setup
 
 ```
-./gradlew cleanIdea idea
-```
-
-### Eclipse
-
-```
-./gradlew cleanEclipse eclipse
-```
-
-## Run the application
-```
-./gradlew bootRun
+yarn install
+yarn watch
+./gradlew clean build bootRun
 ```
 
 In a browser go to `http://localhost:8080/`.

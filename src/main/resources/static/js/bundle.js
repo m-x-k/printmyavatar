@@ -74,16 +74,26 @@
 	        value: function render() {
 	            return React.createElement(
 	                'div',
-	                null,
+	                { id: 'container', className: 'container' },
 	                React.createElement(
-	                    'p',
-	                    null,
-	                    'HELLO MARTIN'
+	                    'object',
+	                    { className: 'mainLogo center', type: 'image/svg+xml', data: '/images/logo.svg' },
+	                    'Your browser does not support SVG'
 	                ),
 	                React.createElement(
-	                    'button',
-	                    { className: 'btn btn-primary' },
-	                    'Test'
+	                    'div',
+	                    { className: 'row' },
+	                    React.createElement(
+	                        'button',
+	                        { className: 'btn btn-primary btn-lg upload-btn center' },
+	                        'Upload + Build + Print'
+	                    )
+	                ),
+	                React.createElement(
+	                    'footer',
+	                    null,
+	                    React.createElement('img', { className: 'agileLogo', src: '/images/agile.svg' }),
+	                    React.createElement('img', { className: 'freeLogo', src: '/images/free.svg' })
 	                )
 	            );
 	        }
