@@ -21,6 +21,19 @@ class PrintMyAvatar extends React.Component {
                               <label htmlFor="file-url">Image URL: </label>
                               <input className="form-control file-url" type="text" name="file-url" id="file-url"/>
                           </div>
+                          <div className="form-group">
+                              <label htmlFor="num-of-images">Number of images to print: </label>
+                              <select className="form-control num-of-images" name="num-of-images" id="num-of-images">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                              </select>
+                          </div>
                       </div>
                       <div className="form-group">
                           <button className="btn btn-primary btn-lg upload-btn center">Upload + Build + Print</button>

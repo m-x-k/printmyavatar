@@ -108,6 +108,59 @@
 	                                    'Image URL: '
 	                                ),
 	                                React.createElement('input', { className: 'form-control file-url', type: 'text', name: 'file-url', id: 'file-url' })
+	                            ),
+	                            React.createElement(
+	                                'div',
+	                                { className: 'form-group' },
+	                                React.createElement(
+	                                    'label',
+	                                    { htmlFor: 'num-of-images' },
+	                                    'Number of images to print: '
+	                                ),
+	                                React.createElement(
+	                                    'select',
+	                                    { className: 'form-control num-of-images', name: 'num-of-images', id: 'num-of-images' },
+	                                    React.createElement(
+	                                        'option',
+	                                        { value: '1' },
+	                                        '1'
+	                                    ),
+	                                    React.createElement(
+	                                        'option',
+	                                        { value: '2' },
+	                                        '2'
+	                                    ),
+	                                    React.createElement(
+	                                        'option',
+	                                        { value: '3' },
+	                                        '3'
+	                                    ),
+	                                    React.createElement(
+	                                        'option',
+	                                        { value: '4' },
+	                                        '4'
+	                                    ),
+	                                    React.createElement(
+	                                        'option',
+	                                        { value: '5' },
+	                                        '5'
+	                                    ),
+	                                    React.createElement(
+	                                        'option',
+	                                        { value: '6' },
+	                                        '6'
+	                                    ),
+	                                    React.createElement(
+	                                        'option',
+	                                        { value: '7' },
+	                                        '7'
+	                                    ),
+	                                    React.createElement(
+	                                        'option',
+	                                        { value: '8' },
+	                                        '8'
+	                                    )
+	                                )
 	                            )
 	                        ),
 	                        React.createElement(

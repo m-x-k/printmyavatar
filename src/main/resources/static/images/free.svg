@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: SketchAPI 4.1.465 <https://api.sketch.io/> -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" sketchjs:metadata="eyJ0aXRsZSI6IkRyYXdpbmciLCJkZXNjcmlwdGlvbiI6Im1hZGUgd2l0aCBTa2V0Y2hwYWQgLSBodHRwczovL3NrZXRjaC5pby9za2V0Y2hwYWQiLCJtZXRhZGF0YSI6e30sImNsaXAiOnsiZW5hYmxlZCI6dHJ1ZSwic3R5bGUiOnsic3Ryb2tlU3R5bGUiOiJibGFjayIsInNoYWRvd0NvbG9yIjoicmdiYSgyNTUsMjU1LDI1NSwwLjE1KSIsInNoYWRvd0JsdXIiOjEsImxpbmVXaWR0aCI6Mn19LCJleHBvcnREUEkiOjcyLCJleHBvcnRGb3JtYXQiOiJwbmciLCJleHBvcnRRdWFsaXR5IjowLjk1LCJ1bml0cyI6InB4Iiwid2lkdGgiOjI1NCwiaGVpZ2h0IjoxMzksInNjYWxlIjoxLCJwYWdlcyI6eyJsZW5ndGgiOjEsImRhdGEiOlt7IndpZHRoIjoyNTQsImhlaWdodCI6MTM5fV19fQ==" sketchjs:version="4.1.465">
+<svg version="1.1"
+	 viewBox="0 0 300 200"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 xmlns:sketchjs="https://sketch.io/dtd/">
 <g sketchjs:tool="rectangle" style="fill: none; mix-blend-mode: source-over; opacity: NaN;">
 	<path id="709e52b8_x2dde69_x2d4efd_x2d9d11_x2dfa29a0927cd9" style="vector-effect: non-scaling-stroke;" d="M0 -57.5 L254 -57.5 254 196.5 0 196.5 z"/>
 	<use xlink:href="#709e52b8_x2dde69_x2d4efd_x2d9d11_x2dfa29a0927cd9"/>

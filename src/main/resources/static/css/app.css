@@ -11,12 +11,16 @@ h1 {
 .mainLogo {
     padding-top: 2%;
     width: 50%;
-    height: 100%;
+    height: auto;
 }
 .freeLogo {
+    width: 30%;
+    height: auto;
     float: right;
 }
 .agileLogo {
+    width: 30%;
+    height: auto;
     float: left;
 }
 .upload-btn {
