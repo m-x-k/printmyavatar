@@ -31,3 +31,13 @@ h1 {
 footer {
     padding-bottom: 2%;
 }
+.file-upload {
+}
+.file-upload-panel {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.panel {
+    background-color: slateblue;
+    border-color: slateblue;
+}

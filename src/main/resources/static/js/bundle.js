@@ -81,12 +81,44 @@
 	                    'Your browser does not support SVG'
 	                ),
 	                React.createElement(
-	                    'div',
-	                    { className: 'row' },
+	                    'form',
+	                    { className: 'form' },
 	                    React.createElement(
-	                        'button',
-	                        { className: 'btn btn-primary btn-lg upload-btn center' },
-	                        'Upload + Build + Print'
+	                        'div',
+	                        { className: 'panel panel-default file-upload-panel' },
+	                        React.createElement(
+	                            'div',
+	                            { className: 'panel-body' },
+	                            React.createElement(
+	                                'div',
+	                                { className: 'form-group' },
+	                                React.createElement(
+	                                    'label',
+	                                    { htmlFor: 'file-upload' },
+	                                    'Image upload: '
+	                                ),
+	                                React.createElement('input', { className: 'form-control file-upload', type: 'file', name: 'file-upload', id: 'file-upload' })
+	                            ),
+	                            React.createElement(
+	                                'div',
+	                                { className: 'form-group' },
+	                                React.createElement(
+	                                    'label',
+	                                    { htmlFor: 'file-url' },
+	                                    'Image URL: '
+	                                ),
+	                                React.createElement('input', { className: 'form-control file-url', type: 'text', name: 'file-url', id: 'file-url' })
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { className: 'form-group' },
+	                            React.createElement(
+	                                'button',
+	                                { className: 'btn btn-primary btn-lg upload-btn center' },
+	                                'Upload + Build + Print'
+	                            )
+	                        )
 	                    )
 	                ),
 	                React.createElement(
