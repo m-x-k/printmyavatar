@@ -45,3 +45,11 @@ footer {
     background-color: slateblue;
     border-color: slateblue;
 }
+.avatar {
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    border: darkgrey;
+    border-style: dashed;
+    margin: 1px;
+}

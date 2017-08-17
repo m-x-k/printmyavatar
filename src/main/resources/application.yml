@@ -4,3 +4,10 @@ server:
 spring:
     thymeleaf:
         cache: false
+
+amazon:
+  aws:
+    access-key-id: ${AWS_ACCESS_KEY_ID}
+    access-key-secret: ${AWS_SECRET_ACCESS_KEY}
+  s3:
+    default-bucket: ${S3_BUCKET_NAME}

@@ -10,16 +10,13 @@ class PrintMyAvatar extends React.Component {
                 <object className="mainLogo center" type="image/svg+xml" data="/images/logo.svg">
                   Your browser does not support SVG
                 </object>
-                <form className="form">
+                <form className="form" action="/upload" method="POST" encType="multipart/form-data">
                     <div className="panel panel-default file-upload-panel">
                       <div className="panel-body">
                           <div className="form-group">
                               <label htmlFor="file-upload">Image upload: </label>
                               <input className="form-control file-upload" type="file" name="file-upload" id="file-upload"/>
-                          </div>
-                          <div className="form-group">
-                              <label htmlFor="file-url">Image URL: </label>
-                              <input className="form-control file-url" type="text" name="file-url" id="file-url"/>
+                              <span>File size limited to less than 1MB!</span>
                           </div>
                           <div className="form-group">
                               <label htmlFor="num-of-images">Number of images to print: </label>

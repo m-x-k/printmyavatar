@@ -82,7 +82,7 @@
 	                ),
 	                React.createElement(
 	                    'form',
-	                    { className: 'form' },
+	                    { className: 'form', action: '/upload', method: 'POST', encType: 'multipart/form-data' },
 	                    React.createElement(
 	                        'div',
 	                        { className: 'panel panel-default file-upload-panel' },
@@ -97,17 +97,12 @@
 	                                    { htmlFor: 'file-upload' },
 	                                    'Image upload: '
 	                                ),
-	                                React.createElement('input', { className: 'form-control file-upload', type: 'file', name: 'file-upload', id: 'file-upload' })
-	                            ),
-	                            React.createElement(
-	                                'div',
-	                                { className: 'form-group' },
+	                                React.createElement('input', { className: 'form-control file-upload', type: 'file', name: 'file-upload', id: 'file-upload' }),
 	                                React.createElement(
-	                                    'label',
-	                                    { htmlFor: 'file-url' },
-	                                    'Image URL: '
-	                                ),
-	                                React.createElement('input', { className: 'form-control file-url', type: 'text', name: 'file-url', id: 'file-url' })
+	                                    'span',
+	                                    null,
+	                                    'File size limited to less than 1MB!'
+	                                )
 	                            ),
 	                            React.createElement(
 	                                'div',
