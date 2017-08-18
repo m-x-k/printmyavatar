@@ -38,8 +38,8 @@ public class HomeController {
             throw new RuntimeException("File upload exceeds 1MB");
         }
         String filename = multipartFile.getOriginalFilename();
-        if (filename.endsWith(".jpg") || filename.endsWith(".png")
-                || filename.endsWith(".jpeg") || filename.endsWith(".gif")) {
+        if (!filename.endsWith(".jpg") && !filename.endsWith(".png")
+                && !filename.endsWith(".jpeg") && !filename.endsWith(".gif")) {
             throw new RuntimeException("File must be of type: [png, jpg, jpeg, gif]");
         }
 
