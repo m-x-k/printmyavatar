@@ -36,6 +36,7 @@ class CreatedBy extends React.Component {
                 <img className="freeLogo" src="/images/free.svg"/>
                 <div className="center">
                     <p>Created by <a href="http://mxk.solutions">MXK Solutions Ltd</a>.</p>
+                    <p>Open source on <a href="https://github.com/m-x-k/printmyavatar">GitHub</a>.</p>
                 </div>
             </footer>
         );

@@ -148,6 +148,17 @@
 	                            'MXK Solutions Ltd'
 	                        ),
 	                        '.'
+	                    ),
+	                    React.createElement(
+	                        'p',
+	                        null,
+	                        'Open source on ',
+	                        React.createElement(
+	                            'a',
+	                            { href: 'https://github.com/m-x-k/printmyavatar' },
+	                            'GitHub'
+	                        ),
+	                        '.'
 	                    )
 	                )
 	            );
