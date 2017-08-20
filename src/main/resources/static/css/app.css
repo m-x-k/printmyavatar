@@ -31,6 +31,7 @@ h1 {
 .center {
     display: block;
     margin: 0 auto;
+    text-align: center;
 }
 footer {
     padding-bottom: 2%;
@@ -52,4 +53,8 @@ footer {
     border: darkgrey;
     border-style: dashed;
     margin: 1px;
+}
+#about-page-content {
+    color: white;
+    text-align: center;
 }
