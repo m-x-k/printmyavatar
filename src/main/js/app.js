@@ -2,8 +2,23 @@
 
 const React = require('react');
 const ReactDOM = require('react-dom');
+import ReCAPTCHA from 'react-google-recaptcha';
 
 class PrintMyAvatar extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            'gRecaptchaResponse': ''
+        }
+    }
+
+    onChange(response) {
+        this.setState({
+           'gRecaptchaResponse': response
+        });
+    }
+
     render() {
         return(
             <div id="container" className="container">
@@ -29,9 +44,12 @@ class PrintMyAvatar extends React.Component {
                                     <option value="6">6</option>
                                     <option value="7">7</option>
                                     <option value="8">8</option>
+                                    <option value="9">9</option>
                               </select>
                           </div>
                       </div>
+                      <ReCAPTCHA ref="recaptcha" sitekey="6Lcsfy0UAAAAAJKU10AcIwSOMc879KcKF2-qZLzQ"
+                                 onChange={this.onChange.bind(this)}/>
                       <div className="form-group">
                           <button className="btn btn-primary btn-lg upload-btn center">Upload + Build + Print</button>
                       </div>

@@ -3,6 +3,7 @@ package org.printmyavatar.controller;
 import org.apache.commons.io.IOUtils;
 import org.printmyavatar.config.AwsS3Config;
 import org.printmyavatar.model.S3File;
+import org.printmyavatar.service.recaptcha.RecaptchaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,6 +25,9 @@ public class HomeController {
     @Autowired
     private AwsS3Config awsS3Config;
 
+    @Autowired
+    private RecaptchaService recaptchaService;
+
     @RequestMapping("/")
     public String home() {
         return "index";
@@ -32,14 +36,18 @@ public class HomeController {
     @PostMapping("/upload")
     public String handleFileUpload(@RequestParam("file-upload") MultipartFile multipartFile,
                                    @RequestParam("num-of-images") Integer numberOfImages,
+                                   @RequestParam("g-recaptcha-response") String gRecaptchaResponse,
                                    Model model) throws IOException {
+
+        if (!recaptchaService.verify(gRecaptchaResponse)) {
+            throw new RuntimeException("Recaptcha verification failed");
+        }
 
         if (multipartFile.getSize() > 1000000) {
             throw new RuntimeException("File upload exceeds 1MB");
         }
         String filename = multipartFile.getOriginalFilename();
-        if (filename.endsWith(".jpg") || filename.endsWith(".png")
-                || filename.endsWith(".jpeg") || filename.endsWith(".gif")) {
+        if (isAllowedImageType(filename)) {
             throw new RuntimeException("File must be of type: [png, jpg, jpeg, gif]");
         }
 
@@ -69,6 +77,11 @@ public class HomeController {
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.connect();
         return outputStream -> IOUtils.copy(connection.getInputStream(), outputStream);
+    }
+
+    private boolean isAllowedImageType(String filename) {
+        return !filename.endsWith(".jpg") && filename.endsWith(".png")
+                && !filename.endsWith(".jpeg") && !filename.endsWith(".gif");
     }
 
 }
