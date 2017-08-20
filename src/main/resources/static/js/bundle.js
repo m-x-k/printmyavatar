@@ -189,7 +189,7 @@
 	                            React.createElement(
 	                                'button',
 	                                { className: 'btn btn-primary btn-lg upload-btn center' },
-	                                'Upload + Build + Print'
+	                                'Upload + Build + Display'
 	                            )
 	                        )
 	                    )

@@ -51,7 +51,7 @@ class PrintMyAvatar extends React.Component {
                       <ReCAPTCHA ref="recaptcha" sitekey="6Lcsfy0UAAAAAJKU10AcIwSOMc879KcKF2-qZLzQ"
                                  onChange={this.onChange.bind(this)}/>
                       <div className="form-group">
-                          <button className="btn btn-primary btn-lg upload-btn center">Upload + Build + Print</button>
+                          <button className="btn btn-primary btn-lg upload-btn center">Upload + Build + Display</button>
                       </div>
                     </div>
                 </form>
